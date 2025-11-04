@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Mason Buss</title>
+    <style>
+        :root {
+            --primary: #2a6bf2;
+            --secondary: #ff6b6b;
+            --background: #f8f9fd;
+            --text: #2c3e50;
+            --accent: #4CAF50;
+            --nav-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .resume-section {
+            margin-bottom: 2.5rem;
+        }
+
+        h1, h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: var(--background);
+            padding: 0.8rem 1.2rem;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: var(--primary);
+            color: white;
+        }
+
+        .education-item, .experience-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .education-item h3, .experience-item h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin: 1rem 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* Navigation Styles */
+        .nav-container {
+            background: var(--nav-bg);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 2rem;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--background);
+            color: var(--primary);
+        }
+
+        .nav-link.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Mason Buss</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="hobbies.html" class="nav-link">Hobbies</a>
+                <a href="discover.html" class="nav-link">Discover UMD</a>
+                <a href="resume.html" class="nav-link active">Resume</a>
+                <a href="career.html" class="nav-link">Career</a>
+                <a href="game.html" class="nav-link">Game</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <div class="resume-header">
+                <h1>Professional Resume</h1>
+                <a href="Mason Buss Resume - Copy.docx" download class="download-button">Download Resume</a>
+            </div>
+
+            <section class="resume-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>University of Minnesota Duluth</h3>
+                    <p><strong>Major:</strong> Finance</p>
+                    <p><strong>Expected Graduation:</strong> 2029</p>
+                    <p><strong>Current Status:</strong> First-year undergraduate student</p>
+                    <p><strong>Focus:</strong> Working towards candidacy in Finance program</p>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>UMD Dining Services</h3>
+                    <p><strong>Position:</strong> Dining Services Team Member</p>
+                    <p><strong>Duration:</strong> Fall 2023 - Present</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Prepare and serve food to university community members</li>
+                        <li>Maintain cleanliness and organization of dining areas</li>
+                        <li>Collaborate with team members in a fast-paced environment</li>
+                        <li>Follow food safety and sanitation protocols</li>
+                        <li>Assist with inventory management and restocking</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>Skills & Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Teamwork</div>
+                    <div class="skill-item">Customer Service</div>
+                    <div class="skill-item">Time Management</div>
+                    <div class="skill-item">Communication</div>
+                    <div class="skill-item">Adaptability</div>
+                    <div class="skill-item">Organization</div>
+                    <div class="skill-item">Food Safety</div>
+                    <div class="skill-item">Problem Solving</div>
+                </div>
+            </section>
+
+            <section class="resume-section">
+                <h2>Athletics & Leadership</h2>
+                <ul>
+                    <li>Competitive Hockey Experience (5th-11th grade)</li>
+                    <li>Developed strong teamwork and leadership skills through sports</li>
+                    <li>Experience in high-pressure team environments</li>
+                </ul>
+            </section>
+
+            <section class="resume-section">
+                <h2>Additional Information</h2>
+                <ul>
+                    <li>Strong interest in finance and business development</li>
+                    <li>Actively pursuing finance program candidacy</li>
+                    <li>Committed to academic and professional growth</li>
+                    <li>Enthusiastic about outdoor activities and sports</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
