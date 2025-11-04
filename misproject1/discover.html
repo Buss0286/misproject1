@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover UMD - Mason Buss</title>
+    <style>
+        :root {
+            --primary: #2a6bf2;
+            --secondary: #ff6b6b;
+            --background: #f8f9fd;
+            --text: #2c3e50;
+            --accent: #4CAF50;
+            --nav-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Navigation Styles */
+        .nav-container {
+            background: var(--nav-bg);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 2rem;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--background);
+            color: var(--primary);
+        }
+
+        .nav-link.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Mason Buss</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="hobbies.html" class="nav-link">Hobbies</a>
+                <a href="discover.html" class="nav-link active">Discover UMD</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="career.html" class="nav-link">Career</a>
+                <a href="game.html" class="nav-link">Game</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Discover UMD & Duluth</h1>
+            
+            <section>
+                <h2>Why I Chose UMD</h2>
+                <p>I chose the University of Minnesota Duluth because it offers the perfect balance in terms of size and location. The campus is large enough to provide numerous opportunities and resources, yet small enough to maintain a close-knit community feel. This "just right" size means I can enjoy personal attention from professors while still having access to extensive facilities and diverse academic programs.</p>
+                <p>The location was also a major factor in my decision. Duluth's unique position on Lake Superior provides an amazing backdrop for my college experience, combining urban amenities with easy access to outdoor activities.</p>
+            </section>
+
+            <section>
+                <h2>UMD Marketing Video</h2>
+                <div class="video-container">
+                    <video controls width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <source src="WIN_20251016_16_17_43_Pro (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+            <section>
+                <h2>Campus Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <h3>Campus Life</h3>
+                        <p>Life at UMD is vibrant and engaging. One of the highlights is being able to attend UMD Bulldogs hockey games, where the energy and school spirit are incredible. Our Division I hockey program is a source of pride for the entire community, creating unforgettable experiences and bringing students together.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Academic Experience</h3>
+                        <p>The academic environment at UMD provides the perfect blend of challenge and support. With smaller class sizes, I've been able to develop strong relationships with my professors and peers, enhancing my learning experience in the Finance program.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Duluth Area</h3>
+                        <p>Duluth is a city full of character and natural beauty. The iconic Aerial Lift Bridge and Canal Park serve as perfect spots for relaxation and entertainment. The city's natural landmarks, including Park Point and the Superior Hiking Trail, offer countless opportunities for outdoor activities. The breathtaking views of Lake Superior, especially during sunrise and sunset, combined with the surrounding forests and hills, make Duluth a truly special place to live and study.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies - Mason Buss</title>
+    <style>
+        /* [Base styles from index.html will be copied here] */
+        :root {
+            --primary: #2a6bf2;
+            --secondary: #ff6b6b;
+            --background: #f8f9fd;
+            --text: #2c3e50;
+            --accent: #4CAF50;
+            --nav-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .hobby-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .hobby-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Navigation Styles */
+        .nav-container {
+            background: var(--nav-bg);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 2rem;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--background);
+            color: var(--primary);
+        }
+
+        .nav-link.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Mason Buss</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="hobbies.html" class="nav-link active">Hobbies</a>
+                <a href="discover.html" class="nav-link">Discover UMD</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="career.html" class="nav-link">Career</a>
+                <a href="game.html" class="nav-link">Game</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>My Hobbies & Interests</h1>
+            
+            <div class="hobby-grid">
+                <!-- Existing hobbies will be expanded here -->
+                <div class="hobby-card">
+                    <img src="IMG_4999.jpg" alt="Fishing" class="hobby-image">
+                    <h2>Fishing</h2>
+                    <p>During the warmer months, one of my greatest passions is fishing. My favorite spot is at my family cabin, where I spend quality time fishing with family and friends. While I enjoy the thrill of catching various fish species, I'm particularly fond of largemouth bass.</p>
+                    <h3>Why It's Important</h3>
+                    <p>Fishing provides a perfect blend of relaxation and excitement, while also offering valuable time with family and friends in nature.</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="_dsc9824.JPG" alt="Hockey" class="hobby-image">
+                    <h2>Hockey</h2>
+                    <p>Hockey has been a significant part of my life since childhood. I played competitively from 5th through 11th grade, and while I no longer play at that level, I still enjoy recreational skating and games.</p>
+                    <h3>Why It's Important</h3>
+                    <p>Hockey taught me valuable lessons about teamwork, dedication, and perseverance. It continues to be a way to stay active and connected with family, especially when skating with my brothers on our backyard rink.</p>
+                </div>
+
+                <!-- Space for additional hobby -->
+                <div class="hobby-card">
+                    <div class="placeholder" style="height: 250px;">
+                        [Add another hobby image here]
+                    </div>
+                    <h2>Additional Hobby</h2>
+                    <p>[Add description of another hobby or interest here]</p>
+                    <h3>Why It's Important</h3>
+                    <p>[Explain why this activity is meaningful to you]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
